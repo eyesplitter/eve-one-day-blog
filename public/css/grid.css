@@ -1,0 +1,104 @@
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.container:after,
+.row:after {
+  clear: both;
+}
+
+.container {
+  width: auto;
+  min-width: 488px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.wide, .half, .third {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+  .container {
+    width: 980px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .container {
+    width: 1240px;
+  }
+  .wide, .half, .third { 
+    float: left;
+  }
+
+  .wide {
+    width: 100%;
+  }
+
+  .half {
+    width: 50%;
+  }
+
+  .third {
+    width: 33.33333333%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  .container {
+    width: 975px;
+  }
+  .wide, .half, .third { 
+    float: left;
+  }
+
+  .wide {
+    width: 100%;
+  }
+
+  .half {
+    width: 50%;
+  }
+
+  .third {
+    width: 33.33333333%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+  .wide, .half, .third { 
+    float: left;
+  }
+
+  .wide {
+    width: 100%;
+  }
+
+  .half {
+    width: 100%;
+  }
+
+  .third {
+    width: 100%;
+  }
+}
