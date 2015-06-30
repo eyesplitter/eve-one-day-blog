@@ -223,30 +223,13 @@ nav {
 
 
 .logo {
+  width: 832px;
   height: 42px;
   float: left;
   margin: 20px 0;
-}
-
-.logo-left-part {
-  width: 264px;
-  height: 24px;
-  margin: 9px 0;
-  background: url("/img/logo_left.png") no-repeat;
-}
-
-.logo-middle-part {
-  width: 293px;
   background: url("/img/logo.png") no-repeat;
-}
 
-.logo-right-part {
-  width: 264px;
-  height: 24px;
-  margin: 9px 0;
-  background: url("/img/logo_right.png") no-repeat;
 }
-
 
 article.section .tags-field {
   position: absolute;
