@@ -1,7 +1,7 @@
 log
 tmp
-*.swp
-*.swo
+.*.swp
+.*.swo
 /blib/
 /.build/
 _build/
