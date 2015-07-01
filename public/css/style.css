@@ -234,40 +234,71 @@ nav {
   transition-timing-function: ease-out;
 }
 
-article.section .tags-field {
-  position: absolute;
-  right: 0;
-  top: -51px;
+.filter {
+  float: right;
+  margin-bottom: 5px;
+  margin-left: 90px;
+  overflow: hidden;
+  height: 0;
 }
 
-article.section .tag {
+nav .toggle {
+  position: absolute;
+  top: 88px;
+  left: 0;
+ 
+ padding: 5px;
+  margin: 0;
+  background: transparent;
+
+  border: 1px solid #455d83;
+  border-radius: 5px;
+
+  font-size: 14px;
+}
+
+.filter-button {
   position: relative;
-  height: 44px;
+}
+
+nav .toggle:hover { 
+  background: rgba( 88,115,155,.5);
+}
+
+nav .toggle:focus {
+  outline: none;
+}
+
+
+.filter .tag {
+  position: relative;
+  height: 30px;
   float: right;
   margin-left: 2px;
+  padding: 0 8px;
   border: 1px solid transparent;
 
   color: #aef;
-  font-size: 18px;
-  line-height: 44px;
-  padding: 0 10px;
+  font-size: 14px;
+  line-height: 30px;
+  cursor: pointer;
 }
 
-article.section .tag:hover {
+.filter .tag:hover {
   border: 1px solid #22292e;
   background: rgba(170,170,170,.1);
 }
 
-article.section .tag .pseudo {
+.filter .tag .pseudo {
   position: absolute;
   width: 100%;
-  height: 44px;
+  height: 30px;
   left: 0;
   right: 0;
 }
 
 
-article.section .tag:after {
+.filter .tag:after {
   content: " ";
   position: absolute;
   width: 3px;
@@ -277,7 +308,7 @@ article.section .tag:after {
   top: 2px;
   left: 2px;
 }
-article.section .tag:before {
+.filter .tag:before {
   content: " ";
   position: absolute;
   width: 3px;
@@ -288,7 +319,7 @@ article.section .tag:before {
   right: 2px;
 }
 
-article.section .tag .pseudo:after {
+.filter .tag .pseudo:after {
   content: " ";
   position: absolute;
   width: 3px;
@@ -298,7 +329,7 @@ article.section .tag .pseudo:after {
   top: 2px;
   right: 2px;
 }
-article.section .tag .pseudo:before {
+.filter .tag .pseudo:before {
   content: " ";
   position: absolute;
   width: 4px;
@@ -309,7 +340,7 @@ article.section .tag .pseudo:before {
   left: 2px;
 }
 
-article.section .active .pseudo:after {
+.filter .active .pseudo:after {
   content: " ";
   position: absolute;
   width: 4px;
@@ -319,7 +350,7 @@ article.section .active .pseudo:after {
   top: 2px;
   right: 2px;
 }
-article.section .active .pseudo:before {
+.filter .active .pseudo:before {
   content: " ";
   position: absolute;
   width: 4px;
@@ -330,7 +361,7 @@ article.section .active .pseudo:before {
   left: 2px;
 }
 
-article.section .active:after {
+.filter .active:after {
   content: " ";
   position: absolute;
   width: 4px;
@@ -340,7 +371,7 @@ article.section .active:after {
   top: 2px;
   left: 2px;
 }
-article.section .active:before {
+.filter .active:before {
   content: " ";
   position: absolute;
   width: 4px;
@@ -351,7 +382,7 @@ article.section .active:before {
   right: 2px;
 }
 
-article.section .active {
+.filter .active {
   border: 1px solid #3c4d59;
   background: rgba(170,170,170,.3);
 }
