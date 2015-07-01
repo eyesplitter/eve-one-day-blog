@@ -93,6 +93,16 @@ article.section h1 {
   font-weight: 400;
 }
 
+article.section h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+article.section h1 a:hover {
+  color: #9ae;
+}
+
+
 article.section .message-body {
   height: 395px;
   margin-bottom: 5px;
@@ -247,9 +257,9 @@ nav .toggle {
   top: 93px;
   left: 0;
  
- padding: 5px;
+  padding: 5px;
   margin: 0;
-  background: transparent;
+  background: #000;
 
   border: 1px solid #455d83;
   border-radius: 5px;
@@ -262,7 +272,7 @@ nav .toggle {
 }
 
 nav .toggle:hover { 
-  background: rgba( 88,115,155,.5);
+  background: rgb( 88,115,155);
 }
 
 nav .toggle:focus {
