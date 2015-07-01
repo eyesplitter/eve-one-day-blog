@@ -84,15 +84,6 @@ article.section h1 {
   font-weight: 400;
 }
 
-article.section .message {
-  float: left;
-  height: 424px;
-  width: 455px;
-
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
-}
 
 article.section .message-body {
   height: 395px;
@@ -103,11 +94,10 @@ article.section .content {
   margin: 0 25px;
 }
 
-.wide article.section .image {
-  float: left;
-  position: relative;
-  width: 753px;
-  height: 424px;
+
+.wide article.section .image img {
+  width: auto;
+  height: 100%;
 }
 
 
