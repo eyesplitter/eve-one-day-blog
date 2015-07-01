@@ -244,7 +244,7 @@ nav {
 
 nav .toggle {
   position: absolute;
-  top: 88px;
+  top: 93px;
   left: 0;
  
  padding: 5px;
@@ -284,6 +284,10 @@ nav .toggle:focus {
   cursor: pointer;
 }
 
+
+.filter .tag {
+  margin: 8px 0;
+}
 .filter .tag:hover {
   border: 1px solid #22292e;
   background: rgba(170,170,170,.1);
