@@ -110,6 +110,8 @@ article.section .content {
   height: 424px;
 }
 
+
+
 article.section .image:after {
   content: " ";
   display: block;
@@ -171,14 +173,21 @@ article.section .author:before {
   top: 1px;
 }
 
-
 nav {
   background: #000;
 }
 
+.menu-icon {
+  width: 39px;
+  height: 39px;
+  background: url('/img/menu-icon.png') no-repeat;
+}
+
 .nav {
+  display: none;
+  float: right;
   list-style: none;
-  margin: 0;
+  margin: 0 0 0 15px;
   padding: 0px;
 }
 
@@ -202,6 +211,11 @@ nav {
   right: 0;
 }
 
+.menu-xs {
+  float: right;
+  margin: 20px 0;
+}
+
 
 .nav li a:before {
   content: " ";
@@ -218,17 +232,6 @@ nav {
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
-}
-
-
-
-.logo {
-  width: 832px;
-  height: 42px;
-  float: left;
-  margin: 20px 0;
-  background: url("/img/logo.png") no-repeat;
-
 }
 
 article.section .tags-field {
@@ -351,4 +354,107 @@ article.section .active:before {
 article.section .active {
   border: 1px solid #3c4d59;
   background: rgba(170,170,170,.3);
+}
+
+
+
+
+.dropdown {
+  position: relative;
+}
+.dropdown-toggle:focus {
+  outline: 0;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 16px;
+  text-align: right;
+  list-style: none;
+  background-color: #161d26;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #455d83;
+}
+
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #ddd;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #2A4764;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #2A4764;
+  outline: 0;
+}
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  color: #777;
+}
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.open > .dropdown-menu {
+  display: block;
+}
+.open > a {
+  outline: 0;
+}
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+.dropdown-menu-left {
+  right: auto;
+  left: 0;
+}
+.dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #777;
+  white-space: nowrap;
+}
+
+.dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 990;
 }
