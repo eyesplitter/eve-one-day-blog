@@ -84,7 +84,6 @@ article.section h1 {
   font-weight: 400;
 }
 
-
 article.section .message-body {
   height: 395px;
   margin-bottom: 5px;
@@ -95,7 +94,9 @@ article.section .content {
 }
 
 
-.wide article.section .image img {
+.wide article.section .image img,
+.half article.section .image img,
+.third article.section .image img {
   width: auto;
   height: 100%;
 }
@@ -371,6 +372,7 @@ article.section .active {
   background-color: #161d26;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
+
   border: 1px solid #455d83;
 }
 
@@ -447,4 +449,8 @@ article.section .active {
   bottom: 0;
   left: 0;
   z-index: 990;
+}
+
+article.section .no-image {
+  width: auto;
 }

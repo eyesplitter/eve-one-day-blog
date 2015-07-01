@@ -39,7 +39,9 @@
   background: url("/img/logo_xs.png") no-repeat;
 }
 
-.wide article.section .image {
+.wide article.section .image, 
+.half article.section .image,
+.third article.section .image {
   float: left;
   position: relative;
   width: 456px;
@@ -91,9 +93,26 @@ article.section .message {
     width: 753px;
     height: 424px;
   }
-  article.section .message {
+  .half article.section .image {
+    width: 588px;
+    height: 330px;
+  }
+  .wide article.section .message {
     width: 455px;
   }
+  .half article.section .message {
+    width: auto;
+  }
+  .wide article.section .no-image {
+    width: auto;
+  }
+  .half article.section .no-image {
+    height: 754px;
+  }
+  .half article.section .no-image .message-body {
+    height: 725px;
+  }
+
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
@@ -113,7 +132,7 @@ article.section .message {
   }
 
   .third {
-    width: 33.33333333%;
+    width: 100%;
   }
 
   .logo {
@@ -126,12 +145,23 @@ article.section .message {
   .menu-xs {
     display: none;
   }
-  .wide article.section .image {
+  .wide article.section .image, 
+  .third article.section .image {
     width: 943px;
     height: 530px;
   }
+  .half article.section .image {
+    width: 456px;
+    height: 256px;
+  }
   article.section .message {
     width: auto;
+  }
+  .half article.section .no-image {
+    height: 680px;
+  }
+  .half article.section .no-image .message-body {
+    height: 651px;
   }
 }
 
@@ -165,7 +195,9 @@ article.section .message {
   .menu-xs {
     display: none;
   }
-  .wide article.section .image {
+  .wide article.section .image,
+  .half article.section .image,
+  .third article.section .image {
     width: 719px;
     height: 404px;
   }
