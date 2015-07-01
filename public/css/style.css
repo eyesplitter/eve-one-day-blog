@@ -508,3 +508,8 @@ nav .toggle:focus {
 article.section .no-image {
   width: auto;
 }
+
+
+footer {
+  background: #000;
+}
