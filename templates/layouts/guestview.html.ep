@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/grid.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/js/jquery.mousewheel.min.js"></script>
+  <script src="/js/jquery.mCustomScrollbar.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="/js/run.js"></script>
+</head>
+<body>
+ <div class="wrap">
+    %= include 'layouts/nav';
+    <main>
+     <%= content %>
+    </main>
+  </div>
+  %= include 'layouts/footer';
+</body>
+</html>

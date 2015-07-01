@@ -30,6 +30,10 @@
 }
 
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "ProximaNovaRegular",Helvetica,Arial,sans-serif;
   background: url("/img/space.jpg");
@@ -38,6 +42,7 @@ body {
   line-height: 16px;
   background-color: #fff;
   padding-top: 82px;
+  height: 100%;
 }
 
 nav {
@@ -510,6 +515,18 @@ article.section .no-image {
 }
 
 
+.wrap {
+  min-height: 100%;
+  margin-bottom: -88px; 
+  padding-bottom: 100px;
+}
+.wrap:after {
+  content: "";
+  display: block;
+}
+
 footer {
   background: #000;
+  height: 88px; 
 }
+
