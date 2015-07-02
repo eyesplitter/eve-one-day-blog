@@ -32,176 +32,121 @@
 }
 
 .logo {
-  height: 42px;
   float: left;
-  margin: 20px 0;
   width: 293px;
+  height: 42px;
+  margin: 20px 0;
   background: url("/img/logo_xs.png") no-repeat;
 }
 
-.wide article.section .image, 
-.half article.section .image,
-.third article.section .image {
-  float: left;
+.wide .section .image, 
+.half .section .image,
+.third .section .image {
   position: relative;
+  float: left;
   width: 456px;
   height: 256px;
 }
 
-article.section .message {
+.section .message {
   float: left;
-  height: 424px;
   width: 455px;
-  font-size: 16px;
+  height: 424px;
   line-height: 24px;
+  font-size: 16px;
   font-weight: 300;
 }
 
 
 @media (min-width: 1260px) {
-  .container {
-    width: 1240px;
-  }
-  .wide, .half, .third { 
-    float: left;
-  }
-
-  .wide {
-    width: 100%;
-  }
-
-  .half {
-    width: 50%;
-  }
-
-  .third {
-    width: 33.33333333%;
-  }
-
+  .container { width: 1240px }
+  .wide, .half, .third { float: left }
+  .wide { width: 100% }
+  .half { width: 50% }
+  .third { width: 33.33333333% }
   .logo {
     width: 832px;
     background: url("/img/logo.png") no-repeat;
+  }
 
-  }
-  .nav {
-    display: block !important; 
-  }
-  .menu-xs {
-    display: none;
-  }
-  .wide article.section .image {
+  .menu-xs { display: none }
+
+  .wide .section .image {
     width: 753px;
     height: 424px;
   }
-  .half article.section .image {
+
+  .half .section .image {
     width: 588px;
     height: 330px;
   }
-  .wide article.section .message {
-    width: 455px;
-  }
-  .half article.section .message {
-    width: auto;
-  }
-  .wide article.section .no-image {
-    width: auto;
-  }
-  .half article.section .no-image {
-    height: 754px;
-  }
-  .half article.section .no-image .message-body {
-    height: 725px;
-  }
 
+  .wide .section .message { width: 455px }
+  .half .section .message { width: auto }
+  .wide .section .no-image { width: auto }
+  .half .section .no-image { height: 754px }
+  .half .section .no-image .message-body { height: 725px }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  .container {
-    width: 975px;
-  }
-  .wide, .half, .third { 
-    float: left;
-  }
-
-  .wide {
-    width: 100%;
-  }
-
-  .half {
-    width: 50%;
-  }
-
-  .third {
-    width: 100%;
-  }
+  .container { width: 975px }
+  .wide, .half, .third { float: left }
+  .wide { width: 100% }
+  .half { width: 50% }
+  .third { width: 100% }
 
   .logo {
     width: 293px;
     background: url("/img/logo_xs.png") no-repeat;
   }
-  .nav {
-    display: block !important; 
-  }
-  .menu-xs {
-    display: none;
-  }
-  .wide article.section .image, 
-  .third article.section .image {
+
+  .menu-xs { display: none }
+  .row .section { margin-bottom: 0 }
+  
+  .wide .section .image, 
+  .third .section .image {
     width: 943px;
     height: 530px;
   }
-  .half article.section .image {
+
+  .half .section .image {
     width: 456px;
     height: 256px;
   }
-  article.section .message {
-    width: auto;
-  }
-  .half article.section .no-image {
-    height: 680px;
-  }
-  .half article.section .no-image .message-body {
-    height: 651px;
-  }
+
+  .section .message { width: auto }
+
+  .half .section .no-image { height: 680px }
+  .half .section .no-image .message-body { height: 651px }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .container {
-    width: 750px;
-  }
-  .wide, .half, .third { 
-    float: left;
-  }
-
-  .wide {
-    width: 100%;
-  }
-
-  .half {
-    width: 100%;
-  }
-
-  .third {
-    width: 100%;
-  }
+  .container { width: 750px }
+  .wide, .half, .third { float: left }
+  .wide { width: 100% }
+  .half { width: 100% }
+  .third { width: 100%; }
 
   .logo {
     width: 293px;
     background: url("/img/logo_xs.png") no-repeat;
   }
-  .nav {
-    display: block !important; 
-  }
-  .menu-xs {
-    display: none;
-  }
-  .wide article.section .image,
-  .half article.section .image,
-  .third article.section .image {
+
+  .menu-xs { display: none }
+
+  .wide .section .image,
+  .half .section .image,
+  .third .section .image {
     width: 719px;
     height: 404px;
   }
-  article.section .message {
-    width: auto;
-  }
+
+  .row .section { margin-bottom: 0 }
+
+  .section .message { width: auto }
+}
+
+@media (max-width: 768px) {
+  .row .section { margin-bottom: 0 } 
+  .nav { display: none } 
 }
